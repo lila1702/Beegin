@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-register',
+  templateUrl: './register.page.html',
+  styleUrls: ['./register.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class RegisterPage implements OnInit {
 
   form: FormControl;
 
@@ -19,11 +19,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  login(){
-    if(this.email == 'lila.msfrazao@gmail.com' && this.senha == '1702')
-    {
-      this.route.navigateByUrl('home')
-    }
+  register(){
+    this.route.navigateByUrl('login')
   }
-
 }
