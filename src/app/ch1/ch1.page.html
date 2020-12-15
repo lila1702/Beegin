@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Capítulo 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+    <ion-item>
+      Você acaba de nascer, foi bastante tempo como um mero ovo... <br>
+      Mas esse tempo acabou!<br><br>
+      Hora de comer e… é só isso.
+    </ion-item><br>
+
+      <ion-button expand="block" (click)='esc1=true'>Comer</ion-button>
+        <ion-card-content *ngIf="esc1">
+          <ion-item>
+          Ok… Crescer e entrar em metamorfose não é fácil.<br><br>
+          Seria bom garantir que os seus gastos de energia não foram em vão, melhor comer mais um pouco.
+          </ion-item>
+        </ion-card-content>
+
+      <ion-button expand="block" (click)='esc1=false'>Comer</ion-button>
+        <ion-card-content *ngIf="!esc1">
+          <ion-item>
+          Ok… Crescer e entrar em metamorfose não é fácil.<br><br>
+          Seria bom garantir que os seus gastos de energia não foram em vão, melhor comer mais um pouco.
+          </ion-item>
+        </ion-card-content>
+
+  </ion-card-content>
+
+</ion-content>

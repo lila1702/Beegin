@@ -4,16 +4,6 @@
 
 export const environment = {
   production: false
-  
-  firebaseConfig: {
-    apiKey: "AIzaSyBFp14SUSkd-aKBcQR7-z0772GluRAiZLM",
-    authDomain: "beegin-time10.firebaseapp.com",
-    projectId: "beegin-time10",
-    storageBucket: "beegin-time10.appspot.com",
-    messagingSenderId: "619316737213",
-    appId: "1:619316737213:web:525eb451c62a265ddff3d4",
-    measurementId: "G-T1E8KZS3B0"
-  }
 };
 
 /*

@@ -20,10 +20,7 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    if(this.email == 'lila.msfrazao@gmail.com' && this.senha == '1702')
-    {
-      this.route.navigateByUrl('home')
-    }
+    this.route.navigateByUrl('home')
   }
 
 }

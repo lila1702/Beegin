@@ -18,8 +18,6 @@ import { AngularFireModule } from '@angular/fire';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule
   ],
 
   providers: [

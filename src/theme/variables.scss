@@ -6,7 +6,7 @@
   /** primary **/
   --ion-color-primary: #ffe138;
   --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast: #272725;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #e0c031;
   --ion-color-primary-tint: #ffd54c;
@@ -145,6 +145,10 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+    disabled-button{
+      --color: secondary;
+    }
   }
 
   /*
