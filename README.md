@@ -2,7 +2,7 @@
 PAD2 projeto
 
 Projeto escolar para ETE Cícero Dias.
-Feita pelo Time 10, do 3º ano, turma C.
+Feito pelo Time 10, do 3º ano, turma C.
 
 Funcionalidades atuais (16/12/2020 18:40):
 - Tela de Registrar e Login funcional, com o único porém é que só guarda um usuário por vez (por enquanto);
