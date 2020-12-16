@@ -1,6 +1,17 @@
 ion-card-content{
     margin-top: 5%;
 }
+.image-center {
+    display: block;
+    width: 30%;
+    height: 30%;
+    object-position: inherit;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
 #log{
     margin-top: 15%;
 }
