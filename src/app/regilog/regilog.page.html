@@ -6,7 +6,12 @@
 
 <ion-content>
   <ion-card-content>
-    <ion-button expand="block" (click)='login()'>Tenho uma conta.</ion-button>
+    <ion-item>
+      Tenha em mente que você só poderá ter uma conta por vez.
+      Ao registrar uma nova, sua antiga será apagada.
+    </ion-item>
+
+    <ion-button id=log expand="block" (click)='login()'>Tenho uma conta.</ion-button>
     <ion-button id=reg expand="block" (click)='register()'>Não tenho uma conta.</ion-button>
   </ion-card-content>
 

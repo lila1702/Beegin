@@ -12,16 +12,16 @@
       Hora de comer e… é só isso.
     </ion-item><br>
 
-      <ion-button expand="block" (click)='showThis()'>Comer</ion-button>
-        <ion-card-content *ngIf="showMe">
+      <ion-button expand="block" [disabled]="this.myService.ch1_esc1B" (click)='butt1A()'>Comer</ion-button>
+        <ion-card-content *ngIf="this.myService.ch1_esc1A">
           <ion-item>
           Ok… Crescer e entrar em metamorfose não é fácil.<br><br>
           Seria bom garantir que os seus gastos de energia não foram em vão, melhor comer mais um pouco.
           </ion-item>
         </ion-card-content>
 
-      <ion-button expand="block" (click)='showThis()'>Comer</ion-button>
-        <ion-card-content *ngIf="showMe">
+      <ion-button expand="block" [disabled]="this.myService.ch1_esc1A" (click)='butt1B()'>Comer</ion-button>
+        <ion-card-content *ngIf="this.myService.ch1_esc1B">
           <ion-item>
           Ok… Crescer e entrar em metamorfose não é fácil.<br><br>
           Seria bom garantir que os seus gastos de energia não foram em vão, melhor comer mais um pouco.

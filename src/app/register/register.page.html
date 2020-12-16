@@ -14,18 +14,18 @@
   
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating">Usuário</ion-label>
-        <ion-input type="text" [ngModel]="user" required></ion-input>
+        <ion-label position="floating"></ion-label>
+        <ion-input placeholder="Nome de Usuário" type="text" [(ngModel)]="user" required></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating">Senha</ion-label>
-        <ion-input type="password" [ngModel]="senha" required></ion-input>
+        <ion-label position="floating"></ion-label>
+        <ion-input placeholder="Senha" type="password" [(ngModel)]="senha" required></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating">Repetir Senha</ion-label>
-        <ion-input type="password" [ngModel]="resenha" required></ion-input>
+        <ion-label position="floating"></ion-label>
+        <ion-input placeholder="Repetir Senha" type="password" [(ngModel)]="resenha" required></ion-input>
       </ion-item>
 
       <ion-button expand="block" (click)='register()'>Registrar</ion-button>

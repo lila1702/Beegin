@@ -1,3 +1,5 @@
+import { ChoicesService } from './choices.service';
+import { UsersService } from './users.service';
 import { environment } from './../environments/environment.prod';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +24,8 @@ import { AngularFireModule } from '@angular/fire';
 
   providers: [
     StatusBar,
+    UsersService,
+    ChoicesService,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

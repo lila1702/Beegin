@@ -1,3 +1,4 @@
+import { ChoicesService } from './../choices.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ch1Page implements OnInit {
 
-  showMe: boolean;
-
-  constructor() { }
+  constructor(public myService:ChoicesService) { }
 
   ngOnInit() {
   }
 
-  showThis(){
-    this.showMe = true;
-    console.log('Show Me true')
+  butt1A(){
+    this.myService.ch1_esc1A = true;
+    console.log('Você escolheu A');
+  }
+  butt1B(){
+    this.myService.ch1_esc1B = true;
+    console.log('Você escolheu B');
   }
 }
