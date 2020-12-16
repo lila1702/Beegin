@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'regilog',
     loadChildren: () => import('./regilog/regilog.module').then( m => m.RegilogPageModule)
   },
+  {
+    path: 'ch2',
+    loadChildren: () => import('./ch2/ch2.module').then( m => m.Ch2PageModule)
+  },
 ];
 
 @NgModule({

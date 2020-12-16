@@ -1,5 +1,6 @@
 import { ChoicesService } from './../choices.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ch1',
@@ -8,17 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ch1Page implements OnInit {
 
-  constructor(public myService:ChoicesService) { }
+  constructor(private route: Router, public myService:ChoicesService) { }
 
   ngOnInit() {
   }
 
   butt1A(){
     this.myService.ch1_esc1A = true;
-    console.log('Você escolheu A');
+    console.log('Você comeu margarida condimentada');
   }
   butt1B(){
     this.myService.ch1_esc1B = true;
-    console.log('Você escolheu B');
+    console.log('Você comeu lírios partidos');
+  }
+  ch2(){
+    this.route.navigateByUrl('ch2')
   }
 }

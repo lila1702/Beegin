@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Capítulo 2 (teste)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+    <ion-item>
+      Você cresceu por 1 semana...
+      Mas continua se lembrando daquela comida que você comeu pouco depois de nascer.
+    </ion-item>
+    </ion-card-content>
+
+    <ion-card-content *ngIf="this.myService.ch1_esc1A">
+      <ion-item>
+        Margarida condimentada, não era?
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content *ngIf="this.myService.ch1_esc1B">
+      <ion-item>
+        Lírio partido, não era?
+      </ion-item>
+    </ion-card-content>
+</ion-content>
