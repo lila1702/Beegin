@@ -11,7 +11,7 @@ export class RegisterPage implements OnInit {
 
   form: FormControl;
 
-  email = '';
+  user = '';
   senha = '';
 
   constructor(private route: Router) { }

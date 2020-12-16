@@ -11,8 +11,8 @@ export class LoginPage implements OnInit {
 
   form: FormControl;
 
-  email = '';
-  senha = '';
+  user: string;
+  senha: string;
 
   constructor(private route: Router) { }
 
@@ -20,7 +20,15 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.route.navigateByUrl('home')
+    console.log("Username:" +this.user);
+    console.log("Password:" +this.senha);
+    if(this.user != null || this.senha != null)
+    {
+      this.route.navigateByUrl('home')
+    }
+    else{
+      alert("Por favor, não deixe nenhum dos campos em branco.")
+    }
   }
 
 }

@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'register',
+    redirectTo: 'regilog',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'ch1',
     loadChildren: () => import('./ch1/ch1.module').then( m => m.Ch1PageModule)
+  },
+  {
+    path: 'regilog',
+    loadChildren: () => import('./regilog/regilog.module').then( m => m.RegilogPageModule)
   },
 ];
 

@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ch1Page implements OnInit {
 
-  esc1: boolean;
+  showMe: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  showThis(){
+    this.showMe = true;
+    console.log('Show Me true')
+  }
 }
